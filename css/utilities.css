@@ -1,0 +1,149 @@
+
+
+/* Stile per il video player */
+.video-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(20, 20, 19, 0.9);
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+.video-screen {
+    flex: 1;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2em;
+}
+
+#movieDetails::-webkit-scrollbar {
+    width: 8px;
+}
+
+#movieDetails::-webkit-scrollbar-track {
+    background: #141414;
+}
+
+#movieDetails::-webkit-scrollbar-thumb {
+    background-color: #757575;
+    border-radius: 4px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(51, 51, 51, 0.5); /* Semi-transparent background for buttons */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+.btn:hover {
+    background-color: rgba(51, 51, 51, 0.7); /* Darken on hover */
+    transform: scale(1.05);
+}
+
+
+.modal-content .close {
+    color: #aaa;
+    align-self: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content .close:hover,
+.modal-content .close:focus {
+    color: #fff;
+}
+
+#movieDetails {
+    width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #757575 #141414;
+}
+
+#movieDetails::-webkit-scrollbar {
+    width: 8px;
+}
+
+#movieDetails::-webkit-scrollbar-track {
+    background: #141414;
+}
+
+#movieDetails::-webkit-scrollbar-thumb {
+    background-color: #757575;
+    border-radius: 4px;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px
+}
+
+.movie-info h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.movie-info p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.movie-description {
+    font-size: 0.9em;
+    max-width: 90%;
+    margin-top: 10px;
+}
+
+.movie-poster {
+    width: 350px;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.movie:hover .movie-poster {
+    transform: scale(1.1);
+}
+
+.modal:target {
+    display: block;
+}

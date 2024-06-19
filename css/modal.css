@@ -1,0 +1,91 @@
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+}
+
+.modal-content {
+    opacity: 1; /* Ensure content is fully visible */
+    background-color: #141414; /* Dark background color for modal */
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    height: 80%;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    align-self: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff; /* Change color on hover */
+}
+
+#movieDetails {
+    width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #757575 #141414;
+}
+
+.movie-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-card h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.movie-card .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgba(51, 51, 51, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.movie-card .btn:hover {
+    background-color: rgba(51, 51, 51, 0.7);
+    transform: scale(1.05);
+}

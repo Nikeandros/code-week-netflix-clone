@@ -1,0 +1,65 @@
+/* Content Section Styles */
+.content-section {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px; ;
+}
+
+.content-row {
+    display: flex;
+    gap: 10px;
+    overflow: auto; /* Modificato da overflow-x: auto; */
+    padding-bottom: 10px;
+    scrollbar-width: none; /* Nasconde la scrollbar per Firefox */
+    -ms-overflow-style: none; /* Nasconde la scrollbar per IE/Edge */
+}
+
+.content-row::-webkit-scrollbar {
+    display: none; /* Nasconde la scrollbar per Chrome, Safari, Opera */
+}
+
+.content-row::-webkit-scrollbar-track {
+    background: none;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Larghezza dei pulsanti */
+    height: 150px; /* Altezza dei pulsanti */
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo trasparente */
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Scuro al passaggio */
+}
+
+.left-btn {
+    left: 10px; /* Distanza dal bordo sinistro */
+}
+
+.right-btn {
+    right: 10px; /* Distanza dal bordo destro */
+}
+
+.content-row::-webkit-scrollbar-thumb {
+    background-color: none;
+    border-radius: none;
+}
+
+.content-row img {
+    height: 200px;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-row img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}

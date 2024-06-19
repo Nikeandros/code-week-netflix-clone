@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopMovies</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left-nav">
+            <img src="./libraries/Senza titolo-2024-05-27-1511.png" alt="PopMovies Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <i class="fa fa-search"></i>
+            <i class="fa fa-bell"></i>
+            <img src="./libraries/maccio.jpg" alt="Profile Icon" class="profile-icon">
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="hero-content">    
+            <button class="btn play"><i class="fa fa-play"></i> Play</button>
+            <button class="btn info"><i class="fa fa-info-circle"></i> More Info</button>
+        </div>
+    </header>
+    <section class="content-section">
+        <h2>Popular on PopMovies</h2>
+        <div class="content-row" id="popular-movies">
+            <!-- Movies will be dynamically added here -->
+        </div>
+        <button class="scroll-btn left-btn">&lt;</button>
+            <button class="scroll-btn right-btn">&gt;</button>
+    </section>
+    <section class="content-section">
+        <h2>Latest Releases</h2>
+        <div class="content-row" id="latest-releases">
+            <!-- Latest releases will be dynamically added here -->
+        </div>
+        <button class="scroll-btn left-btn">&lt;</button>
+            <button class="scroll-btn right-btn">&gt;</button>
+    </section>
+    <section class="content-section">
+        <h2>Action Movies</h2>
+        <div class="content-row" id="action-movies">
+            <!-- Action movies will be dynamically added here -->
+        </div>
+        <button class="scroll-btn left-btn">&lt;</button>
+            <button class="scroll-btn right-btn">&gt;</button>
+    </section>
+    
+    <section class="content-section">
+        <h2>Thriller Movies</h2>
+        <div class="content-row" id="thriller-movies">
+            <!-- Thriller movies will be dynamically added here -->
+        </div>
+        <button class="scroll-btn left-btn">&lt;</button>
+            <button class="scroll-btn right-btn">&gt;</button>
+    </section>
+    
+    <section class="content-section">
+        <h2>Fantasy Movies</h2>
+        <div class="content-row" id="fantasy-movies">
+            <!-- Fantasy movies will be dynamically added here -->
+        </div>
+        <button class="scroll-btn left-btn">&lt;</button>
+            <button class="scroll-btn right-btn">&gt;</button>
+    </section>
+    
+    <section class="content-section">
+        <h2>Animation Movies</h2>
+        <div class="content-row" id="animation-movies">
+            <!-- Animation movies will be dynamically added here -->
+        </div>
+        <button class="scroll-btn left-btn">&lt;</button>
+            <button class="scroll-btn right-btn">&gt;</button>
+    </section>
+    
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#">Audio and Subtitles</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Legal Notices</a></li>
+            <li><a href="#">Corporate Information</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <p>© 1997-2024 PopMovies, Inc.</p>
+    </footer>
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="movieDetails">
+                <!-- Movie details will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+    <script src="./js/scrypt.js"></script>
+</body>
+</html>

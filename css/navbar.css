@@ -1,0 +1,36 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgba(20, 20, 19, 0.9);
+    transition: background-color 0.5s ease;
+}
+
+.navbar .left-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .profile-icon {
+    height: 32px;
+    border-radius: 20px;
+}
